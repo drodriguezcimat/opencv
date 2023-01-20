@@ -114,7 +114,7 @@ void groupRectangles(std::vector<Rect>& rectList, int groupThreshold, double eps
     else
         useDefaultWeights = true;
 
-    for( i = 0; i < nclasses; i++ )
+    for( i = 2; i < nclasses; i++ )
     {
         Rect r = rrects[i];
         float s = 1.f/rweights[i];
